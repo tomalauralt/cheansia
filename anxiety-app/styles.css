@@ -1,9 +1,11 @@
+/* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f9;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0f4f8;
   color: #333;
   margin: 0;
   padding: 20px;
+  line-height: 1.6;
 }
 
 .container {
@@ -11,26 +13,66 @@ body {
   margin: 0 auto;
 }
 
-h1, h2 {
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
   color: #2c3e50;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+/* Modules Section */
+#modules {
+  margin-bottom: 40px;
 }
 
 .module {
   background: white;
   padding: 20px;
-  margin-bottom: 20px;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .module-image {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
+.module-content h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin: 0 0 10px;
+}
+
+.module-content p {
+  font-size: 1rem;
+  color: #555;
+  margin: 0;
+}
+
+/* Mood Tracker Section */
 #tracker {
   margin-top: 40px;
+}
+
+.tracker-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 form {
@@ -39,14 +81,18 @@ form {
 
 label {
   display: block;
+  font-size: 1rem;
+  color: #2c3e50;
   margin-bottom: 10px;
 }
 
 select, button {
+  width: 100%;
   padding: 10px;
-  font-size: 16px;
-  border-radius: 4px;
+  font-size: 1rem;
+  border-radius: 8px;
   border: 1px solid #ccc;
+  margin-bottom: 10px;
 }
 
 button {
@@ -54,6 +100,7 @@ button {
   color: white;
   border: none;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
@@ -63,4 +110,17 @@ button:hover {
 canvas {
   max-width: 100%;
   margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .module {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .module-image {
+    width: 100%;
+    height: auto;
+  }
 }
