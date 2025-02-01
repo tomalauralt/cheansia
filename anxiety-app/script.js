@@ -15,12 +15,30 @@ const moodChart = new Chart(ctx, {
     }]
   },
   options: {
+    responsive: true,
+    maintainAspectRatio: false,
     scales: {
       y: {
         min: 1,
         max: 5,
         ticks: {
           stepSize: 1,
+          callback: function (value) {
+            // Map mood values to emojis
+            const emojis = ['😢', '😕', '😐', '🙂', '😊'];
+            return emojis[value - 1];
+          }
+        }
+      }
+    },
+    plugins: {
+      tooltip: {
+        callbacks: {
+          label: function (context) {
+            // Display mood value and emoji in tooltip
+            const emojis = ['😢 Very Sad', '😕 Sad', '😐 Neutral', '🙂 Happy', '😊 Very Happy'];
+            return `Mood: ${emojis[context.raw - 1]}`;
+          }
         }
       }
     }

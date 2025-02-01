@@ -3,54 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anxiety Management App</title>
+  <title>Exercises - Serenity</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>🌿 Serenity</h1>
-      <p>Your companion for anxiety management and mindfulness.</p>
+      <h1>🏋️‍♀️ Exercises</h1>
+      <p>Practice guided exercises to reduce stress and anxiety.</p>
     </header>
 
-    <!-- Modules Section -->
-    <section id="modules">
-      <h2>Relaxation Techniques</h2>
-      <div class="module">
-        <img src="assets/image1.jpg" alt="Relaxation Image" class="module-image">
-        <div class="module-content">
-          <h3>Deep Breathing Exercise</h3>
-          <p>
-            Practice deep breathing to calm your mind and body. 
-            Inhale deeply for 4 seconds, hold for 4 seconds, and exhale for 6 seconds. 
-            Repeat for 5 minutes.
-          </p>
-        </div>
-      </div>
-    </section>
+    <!-- Back to Home -->
+    <a href="index.html" class="back-button">← Back to Home</a>
 
-    <!-- Mood Tracker Section -->
-    <section id="tracker">
-      <h2>Mood Tracker</h2>
-      <div class="tracker-card">
-        <form id="moodForm">
-          <label for="mood">How are you feeling today?</label>
-          <select id="mood" name="mood">
-            <option value="5">😊 Very Happy</option>
-            <option value="4">🙂 Happy</option>
-            <option value="3">😐 Neutral</option>
-            <option value="2">😕 Sad</option>
-            <option value="1">😢 Very Sad</option>
-          </select>
-          <button type="submit">Log Mood</button>
-        </form>
-        <canvas id="moodChart"></canvas>
+    <!-- Exercises Section -->
+    <section id="exercises">
+      <div class="exercise">
+        <h3>Progressive Muscle Relaxation</h3>
+        <p>
+          Tense and relax each muscle group in your body, starting from your toes 
+          and working your way up to your head. This helps release physical tension.
+        </p>
+      </div>
+      <div class="exercise">
+        <h3>Guided Visualization</h3>
+        <p>
+          Close your eyes and imagine a peaceful place, such as a beach or forest. 
+          Focus on the sights, sounds, and smells to calm your mind.
+        </p>
       </div>
     </section>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>

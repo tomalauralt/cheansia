@@ -3,21 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anxiety Management App</title>
+  <title>Modules - Serenity</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
     <header>
-      <h1>🌿 Serenity</h1>
-      <p>Your companion for anxiety management and mindfulness.</p>
+      <h1>🧘‍♂️ Modules</h1>
+      <p>Learn relaxation techniques and mindfulness practices.</p>
     </header>
+
+    <!-- Back to Home -->
+    <a href="index.html" class="back-button">← Back to Home</a>
 
     <!-- Modules Section -->
     <section id="modules">
-      <h2>Relaxation Techniques</h2>
       <div class="module">
         <img src="assets/image1.jpg" alt="Relaxation Image" class="module-image">
         <div class="module-content">
@@ -30,27 +31,6 @@
         </div>
       </div>
     </section>
-
-    <!-- Mood Tracker Section -->
-    <section id="tracker">
-      <h2>Mood Tracker</h2>
-      <div class="tracker-card">
-        <form id="moodForm">
-          <label for="mood">How are you feeling today?</label>
-          <select id="mood" name="mood">
-            <option value="5">😊 Very Happy</option>
-            <option value="4">🙂 Happy</option>
-            <option value="3">😐 Neutral</option>
-            <option value="2">😕 Sad</option>
-            <option value="1">😢 Very Sad</option>
-          </select>
-          <button type="submit">Log Mood</button>
-        </form>
-        <canvas id="moodChart"></canvas>
-      </div>
-    </section>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>

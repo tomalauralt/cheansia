@@ -3,54 +3,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anxiety Management App</title>
+  <title>Serenity - Anxiety Management</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="container">
+    <!-- Header -->
     <header>
       <h1>🌿 Serenity</h1>
       <p>Your companion for anxiety management and mindfulness.</p>
     </header>
 
-    <!-- Modules Section -->
-    <section id="modules">
-      <h2>Relaxation Techniques</h2>
-      <div class="module">
-        <img src="assets/image1.jpg" alt="Relaxation Image" class="module-image">
-        <div class="module-content">
-          <h3>Deep Breathing Exercise</h3>
-          <p>
-            Practice deep breathing to calm your mind and body. 
-            Inhale deeply for 4 seconds, hold for 4 seconds, and exhale for 6 seconds. 
-            Repeat for 5 minutes.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Mood Tracker Section -->
-    <section id="tracker">
-      <h2>Mood Tracker</h2>
-      <div class="tracker-card">
-        <form id="moodForm">
-          <label for="mood">How are you feeling today?</label>
-          <select id="mood" name="mood">
-            <option value="5">😊 Very Happy</option>
-            <option value="4">🙂 Happy</option>
-            <option value="3">😐 Neutral</option>
-            <option value="2">😕 Sad</option>
-            <option value="1">😢 Very Sad</option>
-          </select>
-          <button type="submit">Log Mood</button>
-        </form>
-        <canvas id="moodChart"></canvas>
-      </div>
-    </section>
+    <!-- Menu -->
+    <nav class="menu">
+      <a href="modules.html" class="menu-item">
+        <span>🧘‍♂️</span>
+        <h3>Modules</h3>
+        <p>Learn relaxation techniques and mindfulness practices.</p>
+      </a>
+      <a href="trackers.html" class="menu-item">
+        <span>📊</span>
+        <h3>Trackers</h3>
+        <p>Track your mood and visualize your progress over time.</p>
+      </a>
+      <a href="exercises.html" class="menu-item">
+        <span>🏋️‍♀️</span>
+        <h3>Exercises</h3>
+        <p>Practice guided exercises to reduce stress and anxiety.</p>
+      </a>
+    </nav>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
